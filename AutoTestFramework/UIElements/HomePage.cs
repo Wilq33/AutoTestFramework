@@ -11,6 +11,6 @@ namespace AutoTestFramework
         }
 
         [FindsBy(How = How.CssSelector,Using = "#page-17 > header > h1")]
-        public IWebElement Introduction { get; set; }
+        public IWebElement Headline { get; set; }
     }
 }
