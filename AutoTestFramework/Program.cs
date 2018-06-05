@@ -11,6 +11,8 @@ namespace AutoTestFramework
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
             menu.Selectors.Click();
 
+            //Config.Credentials.Invalid.Username.FourCharacters;
+
         }
     }
 }
