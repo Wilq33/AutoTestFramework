@@ -1,4 +1,6 @@
 
+using System.Threading;
+
 namespace AutoTestFramework
 {
 
@@ -6,13 +8,21 @@ namespace AutoTestFramework
     {
         static void Main()
         {
-            Menu menu = new Menu();
+          
 
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
-            menu.Selectors.Click();
 
-            //Config.Credentials.Invalid.Username.FourCharacters;
+            NavigateTo.LoginFormThroughTheMenu();
 
+            Thread.Sleep(1000);
+
+            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
+
+            NavigateTo.LoginFormThroghThePost();
+
+            Thread.Sleep(1000);
+
+            Driver.driver.Quit();
         }
     }
 }
