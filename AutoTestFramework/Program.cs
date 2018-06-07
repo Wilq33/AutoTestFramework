@@ -13,16 +13,20 @@ namespace AutoTestFramework
             Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
 
             NavigateTo.LoginFormThroughTheMenu();
+            Actions.FillLoginForm(Config.Credentials.Valid.Username, Config.Credentials.Valid.Password, Config.Credentials.Valid.RepeatPassword);
 
-            Thread.Sleep(1000);
 
-            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
 
-            NavigateTo.LoginFormThroghThePost();
+            //navigating to Login Form through post
+            //Thread.Sleep(1000);
 
-            Thread.Sleep(1000);
+            //Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
 
-            Driver.driver.Quit();
+            //NavigateTo.LoginFormThroghThePost();
+
+            //Thread.Sleep(1000);
+
+            //Driver.driver.Quit();
         }
     }
 }

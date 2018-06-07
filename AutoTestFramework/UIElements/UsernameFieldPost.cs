@@ -12,6 +12,6 @@ namespace AutoTestFramework.UIElements
 
         [FindsBy(How = How.CssSelector, Using = "#post-74 > div > p > a")]
         public IWebElement LoginFormLink { get; set; }
-
+        
     }
 }

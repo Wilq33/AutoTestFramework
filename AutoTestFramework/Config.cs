@@ -27,7 +27,6 @@
                     public static string InvalidPassword = "fdsa4321!";
                     public static string Empty = "";
                     public static string WhiteSpaces = "     ";
-                    
                 }
 
                 public static class Email
@@ -36,7 +35,6 @@
                     public static string WhiteSpaces = "      ";
                     public static string NoAt = "exampleexample.com";
                     public static string NoDot = "example@examplecom";
-
                 }
             }
         }
