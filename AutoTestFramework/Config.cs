@@ -24,7 +24,8 @@
 
                 public static class Password
                 {
-                    public static string InvalidPassword = "fdsa4321!";
+                    public static string FourCharacters = "asdf";
+                    public static string ThirteenCharacters = "fdsa4321asdf!";
                     public static string Empty = "";
                     public static string WhiteSpaces = "     ";
                 }
@@ -43,6 +44,7 @@
         {
             public static string SuccessfulLogin = "Succesful login!";
             public static string UsernameLengthOutOfRange = "User Id should not be empty / length be between 5 to 12";
+            public static string PasswordLengthOutOfRange = "Password should not be empty / length be between 5 to 12";
         }
     }
 }

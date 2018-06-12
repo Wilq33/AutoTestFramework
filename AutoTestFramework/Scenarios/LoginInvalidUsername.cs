@@ -13,7 +13,7 @@ namespace AutoTestFramework.Scenarios
 
         }
 
-        [SetUp]
+        [OneTimeSetUp]
 
         public void Initialize()
         {
@@ -46,6 +46,13 @@ namespace AutoTestFramework.Scenarios
 
             Assert.AreEqual(Config.AlertMessages.UsernameLengthOutOfRange, alert.Text);
             alert.Accept();
+        }
+
+        [OneTimeTearDown]
+
+        public void CleanUp()
+        {
+            Driver.driver.Quit();
         }
     }
 }

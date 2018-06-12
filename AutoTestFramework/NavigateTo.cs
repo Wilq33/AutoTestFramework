@@ -15,7 +15,7 @@ namespace AutoTestFramework
             tsPage.LoginForm.Click();
         }
 
-        public static void LoginFormThroghThePost()
+        public static void LoginFormThroughThePost()
         {
             Menu menu = new Menu();
             TestCasesPage tcPage = new TestCasesPage();
